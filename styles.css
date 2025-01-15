@@ -34,8 +34,8 @@ nav {
 
 .navbarrectangle {
   overflow-y: hidden;
-  width: 103vw; 
-  height: 16vh; 
+  width: 101vw; 
+  height: 14vh; 
   background: #D9D9D9; 
   border-bottom: 5px #412303 solid;
   left: -1vw;
@@ -57,8 +57,8 @@ nav {
   grid-area: 1,1,2,2;
   position: absolute;
   max-width: 50vh;
-  left: 1.4vw;
-  top: 2.5vh;
+  left: 0.4vw;
+  top: 1.5vh;
   
 }
 
@@ -66,15 +66,17 @@ nav {
   grid-area: 2,1,3,2;
 }
 
-@keyframes rainbow {
-  0% { color: red; }
-  16% { color: orange; }
-  33% { color: yellow; }
-  50% { color: green; }
-  66% { color: blue; }
-  83% { color: indigo; }
-  100% { color: violet; }
-}
+
+  /* The gay enabler */
+/* @keyframes rainbow {
+     0% { color: red; }
+     16% { color: orange; }
+     33% { color: yellow; }
+     50% { color: green; }
+     66% { color: blue; }
+     83% { color: indigo; }
+     100% { color: violet; }
+} */
 
 main {
   display: flex;
@@ -91,19 +93,19 @@ main {
   flex-grow: 1;
   height: 84vh;
   margin-top: 20vh;
-  margin-left: 12vw;
-}
-
-.Introcontainer {
+  /* margin-left: 12vw; */
   display: grid;
-  grid-template-rows: 60% / 40%;
+  grid-template-rows: 40% 60%;
+  grid-template-columns: 100% 100%;
+  overflow: hidden;
 }
 
 .Introleftcontent {
-  grid-area: 2/3/2/3;
-  margin-top: -1vh;
+  grid-area: 1,1,2,2;
   position: relative;
   text-align: left;
+  margin-left: 10vw;
+  width: 100%;
 }
 
 .Introleftcontent input {
@@ -111,16 +113,15 @@ main {
 }
 
 .Introleftcontentbig {
-  /* animation: rainbow 3s linear infinite; */
-  font-size: 6vh; 
+  animation: rainbow 3s linear infinite;
   color:#402203;
   text-align:left;
   vertical-align:text-top;
-  font-size:70px;
+  font-size:74px;
   /* line-height:80px; */
-  border-style:hidden;
-  outline:none;
-  width:50%;
+  /* border-style:hidden;
+  outline:none; */
+  width:100%;
   line-height: 11vh;
   overflow: hidden;
 }
@@ -132,16 +133,20 @@ vertical-align:text-top;
 font-size:4vh;
 font-family:Jost;
 line-height:auto;
-width:50%;
+width:100%;
 margin-left: 1vw;
 }
 
 .Introrightcontent {
-  grid-area: 1,2,2,3;
+  grid-area: 2,2,3,3;
+  position: relative;
 }
 
 .Introrightcontent img {
-  width: 50%;
+  width: 100%; 
+  height: 90%;
+  transform: scaleX(-1);
+  margin-right: -20vw;
 }
 
 .Aboutmountain {

@@ -43,6 +43,7 @@ nav {
   opacity: 0.8;
 }
 
+
 /* .maincontentcontainer {
   width: 80%;
 } */
@@ -50,24 +51,32 @@ nav {
 .navgrid {
   overflow-y: hidden;
   display: grid;
-  grid-template-rows: 25 / 10 / 10 / 10 / 10 / 10 / 25;
+  grid-template-rows: 25vh 10vh 10vh 10vh 10vh 25vh;
+
+}
+
+.navgrid a {
+  margin-top: 3vh;
+  text-align: center;
+  font-size: 2.2vw;
+  color:#402203;
 }
 
 .navimg {
-  grid-area: 1,1,2,2;
+  grid-area: 1/1/2/2;
   position: absolute;
   max-width: 50vh;
   left: 0.4vw;
   top: 1.5vh;
-  
 }
 
 .homelink {
-  grid-area: 2,1,3,2;
+  grid-area: 2/2/3/3;
+
 }
 
 
-  /* The gay enabler */
+  /* The gay enabler  */
 /* @keyframes rainbow {
      0% { color: red; }
      16% { color: orange; }
@@ -91,62 +100,66 @@ main {
 
 .Intro {
   flex-grow: 1;
-  height: 84vh;
+  /* height: 84vh; */
   margin-top: 20vh;
   /* margin-left: 12vw; */
   display: grid;
-  grid-template-rows: 40% 60%;
+  grid-template-rows: 65% 35%;
   grid-template-columns: 100% 100%;
   overflow: hidden;
+  
 }
 
 .Introleftcontent {
-  grid-area: 1,1,2,2;
+  grid-area: 1/1/2/2;
   position: relative;
   text-align: left;
-  margin-left: 10vw;
+  margin-left: 11vw;
   width: 100%;
+  overflow: hidden;
+
 }
 
 .Introleftcontent input {
   margin-left: -1vw ;
 }
 
+
+/* The big text between the tiny text in the left grid */
 .Introleftcontentbig {
   animation: rainbow 3s linear infinite;
   color:#402203;
   text-align:left;
   vertical-align:text-top;
-  font-size:74px;
+  font-size:85px;
   /* line-height:80px; */
-  /* border-style:hidden;
-  outline:none; */
   width:100%;
-  line-height: 11vh;
+  line-height: 13vh;
   overflow: hidden;
+
+
 }
 
+/* The text above and under SBXXXX */
 .Introleftcontentmainp {
 color:#402203;
 text-align:left;
-vertical-align:text-top;
-font-size:4vh;
-font-family:Jost;
-line-height:auto;
+/* vertical-align:text-top; */
+font-size:5vh;
 width:100%;
 margin-left: 1vw;
 }
 
 .Introrightcontent {
-  grid-area: 2,2,3,3;
+  grid-area: 2/2/3/3;
   position: relative;
 }
 
 .Introrightcontent img {
   width: 100%; 
   height: 90%;
-  transform: scaleX(-1);
-  margin-right: -20vw;
+  /* transform: scaleX(-1); */
+  margin-right: 5vw;
 }
 
 .Aboutmountain {
